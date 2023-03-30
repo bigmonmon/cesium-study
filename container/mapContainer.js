@@ -6,7 +6,7 @@ class MapContainer {
     constructor(element, store){
         this.el = this.render(element);
         store.viewer = this._viewer = new MapComponent().getView();
-        //new FlightTrackerComponent(store.viewer);
+        new FlightTrackerComponent(store.viewer);
     }
 
     render(element){
